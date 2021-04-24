@@ -1,6 +1,8 @@
 // Import stylesheets
 import './style.css';
-import Two from  'two.js';
+import Two from 'two.js';
+// import {Two} from 'types.js';
+
 
 // Write TypeScript code!
 const appDiv: HTMLElement = document.getElementById('app');
@@ -30,7 +32,9 @@ two.update();
 
 setInterval(() => {
   circle.linewidth++;
-  rect.opacity = rect.opacity - 0.05;
+  //rect.opacity = rect.opacity - 0.05;
 
   two.update();
-  }, 500)
+  }, 5)
+
+var x : Two.Anchor = new Two.Anchor()
