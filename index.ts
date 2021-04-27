@@ -32,6 +32,7 @@ star.fill = "#F23e40";
 star.stroke = "yellow"; // Accepts all valid css color
 star.linewidth = 5;
 
+
 // Don't forget to tell two to render everything
 // to the screen
 two.update();
