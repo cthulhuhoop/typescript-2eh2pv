@@ -25,21 +25,27 @@ circle.linewidth = 5;
 
 rect.fill = "rgb(0, 200, 255)";
 rect.opacity = 0.55;
-rect.noStroke();
+//rect.noStroke();
+rect.nstroke = "yellow";
+rect.linewidth=5;
 
 // The object returned has many stylable properties:
 star.fill = "#F23e40";
 star.stroke = "yellow"; // Accepts all valid css color
 star.linewidth = 5;
 
+var g = two.makeGroup(star, rect)
 
 // Don't forget to tell two to render everything
 // to the screen
 two.update();
-
+ 
 setInterval(() => {
   circle.linewidth++;
   //rect.opacity = rect.opacity - 0.05;
 
+  //g.rotation = Math.PI;
+
+  g.linewidth = g.linewidth + .21;
   two.update();
 }, 5);
