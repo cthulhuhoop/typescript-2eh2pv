@@ -1,4 +1,4 @@
-/// <reference path="two_types.d.ts" />
+/// <reference types="two_types.d.ts" />
 
 // Import stylesheets
 import "./style.css";
@@ -42,5 +42,3 @@ setInterval(() => {
 
   two.update();
 }, 5);
-
-var x: Two.Anchor = new Two.Anchor("sds");
